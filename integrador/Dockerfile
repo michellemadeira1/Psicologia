@@ -1,5 +1,5 @@
 # Etapa de construção
-FROM maven:3.8.5-openjdk-11 as build
+FROM maven:3.2.0-openjdk-11 as build
 WORKDIR /app
 COPY . /app
 RUN mvn clean package -X -DskipTests
